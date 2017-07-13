@@ -1,7 +1,5 @@
 {% extends "page.html" %}
 
-{% block favicon %}<link id="favicon" rel="shortcut icon" type="image/x-icon" href="{{static_url("base/images/favicon-notebook.ico") }}">{% endblock %}
-
 {% block stylesheet %}
 
 {% if mathjax_url %}
@@ -38,7 +36,7 @@ data-notebook-path="{{notebook_path | urlencode}}"
 {% block headercontainer %}
 
 
-<span id="save_widget" class="save_widget">
+<span id="save_widget" class="pull-left save_widget">
     <span id="notebook_name" class="filename"></span>
     <span class="checkpoint_status"></span>
     <span class="autosave_status"></span>
@@ -332,17 +330,24 @@ data-notebook-path="{{notebook_path | urlencode}}"
 </div>
 </div>
 
-<div class="lower-header-bar"></div>
+<div class="lower-header-bar">
+</div>
 {% endblock header %}
 
 {% block site %}
 
-<div id="ipython-main-app">
+<div id="ipython-main-app">  
     <div id="notebook_panel">
-        <div id="notebook"></div>
-        <div id='tooltip' class='ipython_tooltip' style='display:none'></div>
+        <div id="notebook">      
+        </div>
+        <div id='tooltip' class='ipython_tooltip' style='display:none'>
+        </div>
+        
     </div>
+    
+    
 </div>
+
 
 
 {% endblock %}
