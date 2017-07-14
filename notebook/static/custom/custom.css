@@ -1578,6 +1578,7 @@ pre code {
   margin-left: auto;
   padding-left: 0px;
   padding-right: 0px;
+    width: 100%;
 }
 
 /*매뉴얼
@@ -1612,7 +1613,7 @@ pre code {
   .container {
     width: 768px;
   }
-    
+
 }
 @media (min-width: 992px) {
   .container {
@@ -8478,15 +8479,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -8971,7 +8972,7 @@ span#login_widget > .button .badge,
 .alternate_upload {
   background-color: none;
   display: inline;
-    
+
 }
 .alternate_upload.form {
   padding: 0;
@@ -9302,7 +9303,7 @@ ul#new-menu {
   padding-left: 12px;
   padding-right: 12px;
   line-height: 22px;
-  height: 38px;   
+  height: 38px;
 }
 #running .panel-group .panel .panel-heading a:focus,
 #running .panel-group .panel .panel-heading a:hover {
@@ -9442,7 +9443,7 @@ ul#new-menu {
 #texteditor-backdrop {
     padding-top: 0;
     padding-bottom: 0;
-   
+
   /*
   padding-top: 20px;
   padding-bottom: 20px;
@@ -11622,7 +11623,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
